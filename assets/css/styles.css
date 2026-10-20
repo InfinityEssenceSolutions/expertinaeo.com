@@ -1695,3 +1695,13 @@ p:last-child { margin-bottom: 0; }
     /* Stack hero stats */
     .hero-trust-item { flex: 1 1 100%; margin-bottom: 8px; }
   }
+/* Ensure mobile menu sits above everything */
+.mobile-menu {
+    z-index: 10000; /* Higher than header */
+  }
+  .mobile-menu-backdrop {
+    z-index: 9999;
+  }
+  .site-header {
+    z-index: 9998;
+  }
