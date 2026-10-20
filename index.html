@@ -30,7 +30,7 @@
   <!-- Font Awesome 6 Free -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!-- Styles -->
+  <!-- Styles (Root level path) -->
   <link rel="stylesheet" href="./assets/css/styles.css" />
 
   <!-- Favicon (inline SVG) -->
@@ -62,187 +62,9 @@
   </script>
 </head>
 <body data-wa-context="homepage">
-  <a class="skip-link" href="#main">Skip to main content</a>
 
-  <!-- ============================================================
-       SITE HEADER — floating glass bar with mega menus
-       ============================================================ -->
-  <header class="site-header" role="banner">
-    <div class="header-shell">
-      <div class="header-inner">
-        <a class="logo" href="/" aria-label="ExpertinAEO — home">
-          <span class="logo-word"><span class="logo-expertin">Expertin</span><span class="logo-aeo">AEO</span></span>
-          <!-- <span class="logo-parent">A product of Tapadia Tech</span> -->
-        </a>
+  <!-- The layout.js script will automatically inject Header & Mobile Menu right before <main> -->
 
-        <nav class="nav-primary" aria-label="Primary">
-          <div class="nav-item"><a class="nav-link active" href="/">Home</a></div>
-
-          <div class="nav-item has-mega">
-            <a class="nav-link" href="./services/index.html" aria-haspopup="true">Services <i class="fa-solid fa-chevron-down chev"></i></a>
-            <div class="mega" role="menu">
-              <div class="mega-grid">
-                <a class="mega-link" href="./services/aeo-consulting/index.html"><i class="fa-solid fa-lightbulb mega-icon"></i><div><strong>AEO Consulting</strong><small>Strategy, roadmaps &amp; prioritization</small></div></a>
-                <a class="mega-link" href="/services/aeo-audit/"><i class="fa-solid fa-clipboard-check mega-icon"></i><div><strong>AEO Audit</strong><small>Full readiness assessment</small></div></a>
-                <a class="mega-link" href="/services/featured-snippet-optimization/"><i class="fa-solid fa-bolt mega-icon"></i><div><strong>Featured Snippets</strong><small>Position-zero content</small></div></a>
-                <a class="mega-link" href="/services/people-also-ask-optimization/"><i class="fa-solid fa-circle-question mega-icon"></i><div><strong>People Also Ask</strong><small>Question coverage</small></div></a>
-                <a class="mega-link" href="/services/voice-search-optimization/"><i class="fa-solid fa-microphone mega-icon"></i><div><strong>Voice Search</strong><small>Conversational queries</small></div></a>
-                <a class="mega-link" href="/services/conversational-search-optimization/"><i class="fa-solid fa-comments mega-icon"></i><div><strong>Conversational</strong><small>Natural-language UX</small></div></a>
-                <a class="mega-link" href="/services/faq-content-optimization/"><i class="fa-solid fa-list-check mega-icon"></i><div><strong>FAQ Content</strong><small>Answer-rich pages</small></div></a>
-                <a class="mega-link" href="/services/schema-markup/"><i class="fa-solid fa-code mega-icon"></i><div><strong>Schema Markup</strong><small>JSON-LD implementation</small></div></a>
-                <a class="mega-link" href="/services/entity-optimization/"><i class="fa-solid fa-diagram-project mega-icon"></i><div><strong>Entity Optimization</strong><small>Knowledge-graph signals</small></div></a>
-              </div>
-              <div class="mega-foot">
-                <span><i class="fa-solid fa-layer-group"></i> 15 specialist services across the full AEO stack</span>
-                <a href="/services/">View all <i class="fa-solid fa-arrow-right"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="nav-item has-mega">
-            <a class="nav-link" href="/industries/" aria-haspopup="true">Industries <i class="fa-solid fa-chevron-down chev"></i></a>
-            <div class="mega" role="menu">
-              <div class="mega-grid">
-                <a class="mega-link" href="/industries/saas/"><i class="fa-solid fa-cloud mega-icon"></i><div><strong>SaaS</strong><small>Product-led AEO</small></div></a>
-                <a class="mega-link" href="/industries/ecommerce/"><i class="fa-solid fa-cart-shopping mega-icon"></i><div><strong>eCommerce</strong><small>Product &amp; category</small></div></a>
-                <a class="mega-link" href="/industries/healthcare/"><i class="fa-solid fa-heart-pulse mega-icon"></i><div><strong>Healthcare</strong><small>YMYL authority</small></div></a>
-                <a class="mega-link" href="/industries/real-estate/"><i class="fa-solid fa-house mega-icon"></i><div><strong>Real Estate</strong><small>Local answer coverage</small></div></a>
-                <a class="mega-link" href="/industries/education/"><i class="fa-solid fa-graduation-cap mega-icon"></i><div><strong>Education</strong><small>Course discovery</small></div></a>
-                <a class="mega-link" href="/industries/b2b/"><i class="fa-solid fa-briefcase mega-icon"></i><div><strong>B2B</strong><small>Decision-stage content</small></div></a>
-                <a class="mega-link" href="/industries/plumbing/"><i class="fa-solid fa-faucet-drip mega-icon"></i><div><strong>Plumbing</strong><small>Local services AEO</small></div></a>
-                <a class="mega-link" href="/industries/dental-clinics/"><i class="fa-solid fa-tooth mega-icon"></i><div><strong>Dental Clinics</strong><small>YMYL healthcare</small></div></a>
-                <a class="mega-link" href="/industries/hvac/"><i class="fa-solid fa-snowflake mega-icon"></i><div><strong>HVAC</strong><small>Seasonal demand</small></div></a>
-              </div>
-              <div class="mega-foot">
-                <span><i class="fa-solid fa-layer-group"></i> 18 verticals with tailored methodology</span>
-                <a href="/industries/">View all <i class="fa-solid fa-arrow-right"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="nav-item"><a class="nav-link" href="/pricing/">Pricing</a></div>
-
-          <div class="nav-item has-mega">
-            <a class="nav-link" href="/tools/" aria-haspopup="true">Free Tools <i class="fa-solid fa-chevron-down chev"></i></a>
-            <div class="mega" style="width: min(560px, calc(100vw - 48px));" role="menu">
-              <div class="mega-grid cols-2">
-                <a class="mega-link" href="/tools/aeo-checker/"><i class="fa-solid fa-magnifying-glass-chart mega-icon"></i><div><strong>AEO Checker</strong><small>Free readiness audit</small></div></a>
-                <a class="mega-link" href="/tools/schema-checker/"><i class="fa-solid fa-code mega-icon"></i><div><strong>Schema Checker</strong><small>JSON-LD inspection</small></div></a>
-                <a class="mega-link" href="/tools/answer-checker/"><i class="fa-solid fa-circle-check mega-icon"></i><div><strong>Answer Checker</strong><small>Direct-answer scoring</small></div></a>
-                <a class="mega-link" href="/tools/faq-generator/"><i class="fa-solid fa-comment-dots mega-icon"></i><div><strong>FAQ Generator</strong><small>Question suggestions</small></div></a>
-                <a class="mega-link" href="/tools/meta-heading-checker/"><i class="fa-solid fa-heading mega-icon"></i><div><strong>Meta &amp; Heading</strong><small>On-page audit</small></div></a>
-              </div>
-              <div class="mega-foot">
-                <span><i class="fa-solid fa-gift"></i> 5 free tools, no signup required</span>
-                <a href="/tools/">Explore <i class="fa-solid fa-arrow-right"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="nav-item"><a class="nav-link" href="/aeo-services/">Markets</a></div>
-
-          <div class="nav-item has-mega">
-            <a class="nav-link" href="/about/" aria-haspopup="true">Company <i class="fa-solid fa-chevron-down chev"></i></a>
-            <div class="mega" style="width: min(440px, calc(100vw - 48px));" role="menu">
-              <div class="mega-grid cols-2">
-                <a class="mega-link" href="/about/"><i class="fa-solid fa-building mega-icon"></i><div><strong>About Us</strong><small>23+ years of Tapadia Tech</small></div></a>
-                <a class="mega-link" href="/case-studies/"><i class="fa-solid fa-chart-line mega-icon"></i><div><strong>Case Studies</strong><small>Methodology &amp; evidence</small></div></a>
-                <a class="mega-link" href="/resources/"><i class="fa-solid fa-book-open mega-icon"></i><div><strong>Resources</strong><small>Guides &amp; insights</small></div></a>
-                <a class="mega-link" href="/contact/"><i class="fa-solid fa-envelope mega-icon"></i><div><strong>Contact</strong><small>Talk to a strategist</small></div></a>
-              </div>
-            </div>
-          </div>
-        </nav>
-
-        <div class="header-cta">
-          <a class="header-phone" href="tel:+12132581582" aria-label="Call us at +1 213 258 1582">
-            <i class="fa-solid fa-phone"></i>
-            <span>+1-213-258-1582</span>
-          </a>
-          <a class="btn btn-primary btn-sm" href="/free-aeo-audit/" data-ga="audit_request" data-ga-source="header">
-            <i class="fa-solid fa-bolt"></i> Get Free AEO Audit
-          </a>
-          <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
-            <span></span><span></span><span></span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- Mobile menu backdrop + drawer -->
-  <div class="mobile-menu-backdrop" id="mobileMenuBackdrop"></div>
-  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
-    <nav class="mobile-nav" aria-label="Mobile">
-      <div class="mobile-nav-item"><a class="mobile-nav-link" href="/"><i class="fa-solid fa-house"></i> Home</a></div>
-
-      <div class="mobile-nav-item">
-        <button class="mobile-nav-link" data-acc-toggle="acc-services" aria-expanded="false">
-          <span><i class="fa-solid fa-layer-group"></i> Services</span> <span class="acc-icon"><i class="fa-solid fa-plus"></i></span>
-        </button>
-        <div class="mobile-nav-children" id="acc-services"><div>
-          <a href="/services/aeo-consulting/">AEO Consulting</a>
-          <a href="/services/aeo-audit/">AEO Audit</a>
-          <a href="/services/featured-snippet-optimization/">Featured Snippet Optimization</a>
-          <a href="/services/people-also-ask-optimization/">People Also Ask Optimization</a>
-          <a href="/services/voice-search-optimization/">Voice Search Optimization</a>
-          <a href="/services/schema-markup/">Schema Markup</a>
-          <a href="/services/entity-optimization/">Entity Optimization</a>
-          <a href="/services/">View all services →</a>
-        </div></div>
-      </div>
-
-      <div class="mobile-nav-item">
-        <button class="mobile-nav-link" data-acc-toggle="acc-industries" aria-expanded="false">
-          <span><i class="fa-solid fa-industry"></i> Industries</span> <span class="acc-icon"><i class="fa-solid fa-plus"></i></span>
-        </button>
-        <div class="mobile-nav-children" id="acc-industries"><div>
-          <a href="/industries/saas/">SaaS</a>
-          <a href="/industries/ecommerce/">eCommerce</a>
-          <a href="/industries/healthcare/">Healthcare</a>
-          <a href="/industries/real-estate/">Real Estate</a>
-          <a href="/industries/plumbing/">Plumbing</a>
-          <a href="/industries/">View all industries →</a>
-        </div></div>
-      </div>
-
-      <div class="mobile-nav-item"><a class="mobile-nav-link" href="/pricing/"><i class="fa-solid fa-tag"></i> Pricing</a></div>
-
-      <div class="mobile-nav-item">
-        <button class="mobile-nav-link" data-acc-toggle="acc-tools" aria-expanded="false">
-          <span><i class="fa-solid fa-toolbox"></i> Free Tools</span> <span class="acc-icon"><i class="fa-solid fa-plus"></i></span>
-        </button>
-        <div class="mobile-nav-children" id="acc-tools"><div>
-          <a href="/tools/aeo-checker/">AEO Checker</a>
-          <a href="/tools/schema-checker/">Schema Checker</a>
-          <a href="/tools/answer-checker/">Answer Checker</a>
-          <a href="/tools/faq-generator/">FAQ Generator</a>
-          <a href="/tools/meta-heading-checker/">Meta &amp; Heading Checker</a>
-        </div></div>
-      </div>
-
-      <div class="mobile-nav-item"><a class="mobile-nav-link" href="/aeo-services/"><i class="fa-solid fa-globe"></i> International Markets</a></div>
-      <div class="mobile-nav-item"><a class="mobile-nav-link" href="/case-studies/"><i class="fa-solid fa-chart-line"></i> Case Studies</a></div>
-      <div class="mobile-nav-item"><a class="mobile-nav-link" href="/resources/"><i class="fa-solid fa-book-open"></i> Resources</a></div>
-      <div class="mobile-nav-item"><a class="mobile-nav-link" href="/about/"><i class="fa-solid fa-building"></i> About</a></div>
-      <div class="mobile-nav-item"><a class="mobile-nav-link" href="/contact/"><i class="fa-solid fa-envelope"></i> Contact</a></div>
-    </nav>
-
-    <a class="btn btn-primary btn-block" href="/free-aeo-audit/"><i class="fa-solid fa-bolt"></i> Get Free AEO Audit</a>
-
-    <div class="mobile-menu-meta">
-      <a href="tel:+12132581582">
-        <i class="fa-solid fa-phone"></i> +1-213-258-1582
-      </a>
-      <a href="mailto:info@tapadiatech.com">
-        <i class="fa-solid fa-envelope"></i> info@tapadiatech.com
-      </a>
-    </div>
-  </div>
-
-  <!-- ============================================================
-       MAIN
-       ============================================================ -->
   <main id="main">
 
     <!-- ===== 1. HERO — split layout with floating dashboard ===== -->
@@ -253,8 +75,8 @@
           <h1>Answer Engine Optimization That <span class="accent">Makes Your Brand the Answer</span></h1>
           <p class="lead">Build stronger visibility across modern search experiences with expert-led AEO strategy, structured content, technical optimization and measurable performance analysis.</p>
           <div class="hero-cta">
-            <a class="btn btn-primary btn-lg" href="/free-aeo-audit/" data-ga="audit_request" data-ga-source="hero"><i class="fa-solid fa-bolt"></i> Get Your Free AEO Audit</a>
-            <a class="btn btn-secondary btn-lg" href="/tools/aeo-checker/" data-ga="aeo_tool_start" data-ga-tool="aeo_checker" data-ga-source="hero"><i class="fa-solid fa-magnifying-glass-chart"></i> Check Your AEO Readiness</a>
+            <a class="btn btn-primary btn-lg" href="./free-aeo-audit/index.html" data-ga="audit_request" data-ga-source="hero"><i class="fa-solid fa-bolt"></i> Get Your Free AEO Audit</a>
+            <a class="btn btn-secondary btn-lg" href="./tools/aeo-checker/index.html" data-ga="aeo_tool_start" data-ga-tool="aeo_checker" data-ga-source="hero"><i class="fa-solid fa-magnifying-glass-chart"></i> Check Your AEO Readiness</a>
           </div>
           <div class="hero-trust">
             <div class="hero-trust-item">
@@ -345,8 +167,8 @@
             <p class="lead">ExpertinAEO is the dedicated Answer Engine Optimization practice of Tapadia Tech. Our parent brand has served international clients across SEO, performance marketing and digital growth since 2001, with a sister brand focused on traditional SEO since 2008.</p>
             <p style="color: var(--text-muted); margin-top: 16px;">We bring the rigour of an established technology consulting firm to a modern discipline — combining technical depth, content strategy and structured-data expertise with measurable performance reporting.</p>
             <div style="display: flex; gap: 12px; margin-top: 24px; flex-wrap: wrap;">
-              <a class="btn btn-ghost" href="/about/"><i class="fa-solid fa-building"></i> About ExpertinAEO</a>
-              <a class="btn btn-ghost" href="/case-studies/"><i class="fa-solid fa-chart-line"></i> Methodology &amp; evidence</a>
+              <a class="btn btn-ghost" href="./about/index.html"><i class="fa-solid fa-building"></i> About ExpertinAEO</a>
+              <a class="btn btn-ghost" href="./case-studies/index.html"><i class="fa-solid fa-chart-line"></i> Methodology &amp; evidence</a>
             </div>
           </div>
           <div class="cred-stat-grid">
@@ -440,63 +262,63 @@
           <p>Fifteen focused services covering the full answer-engine visibility stack — from initial audit and strategy through to ongoing monitoring and AI answer visibility tracking.</p>
         </div>
         <div class="service-grid" data-reveal>
-          <a class="service-tile" href="/services/aeo-consulting/">
+          <a class="service-tile" href="./services/aeo-consulting/index.html">
             <div class="service-tile-num">01</div>
             <div class="service-tile-icon"><i class="fa-solid fa-lightbulb"></i></div>
             <h3>AEO Consulting</h3>
             <p>Strategy, roadmaps and prioritization built around your answer-readiness gaps.</p>
             <span class="service-tile-arrow">Explore service <i class="fa-solid fa-arrow-right"></i></span>
           </a>
-          <a class="service-tile" href="/services/aeo-audit/">
+          <a class="service-tile" href="./services/aeo-audit/index.html">
             <div class="service-tile-num">02</div>
             <div class="service-tile-icon"><i class="fa-solid fa-clipboard-check"></i></div>
             <h3>AEO Audit</h3>
             <p>Readiness assessment across content, technical, structured data and entity signals.</p>
             <span class="service-tile-arrow">Explore service <i class="fa-solid fa-arrow-right"></i></span>
           </a>
-          <a class="service-tile" href="/services/featured-snippet-optimization/">
+          <a class="service-tile" href="./services/featured-snippet-optimization/index.html">
             <div class="service-tile-num">03</div>
             <div class="service-tile-icon"><i class="fa-solid fa-bolt"></i></div>
             <h3>Featured Snippet Optimization</h3>
             <p>Position-zero content structures built for direct extraction by search engines.</p>
             <span class="service-tile-arrow">Explore service <i class="fa-solid fa-arrow-right"></i></span>
           </a>
-          <a class="service-tile" href="/services/people-also-ask-optimization/">
+          <a class="service-tile" href="./services/people-also-ask-optimization/index.html">
             <div class="service-tile-num">04</div>
             <div class="service-tile-icon"><i class="fa-solid fa-circle-question"></i></div>
             <h3>People Also Ask</h3>
             <p>Systematic question coverage mapped to PAA boxes across your topic cluster.</p>
             <span class="service-tile-arrow">Explore service <i class="fa-solid fa-arrow-right"></i></span>
           </a>
-          <a class="service-tile" href="/services/voice-search-optimization/">
+          <a class="service-tile" href="./services/voice-search-optimization/index.html">
             <div class="service-tile-num">05</div>
             <div class="service-tile-icon"><i class="fa-solid fa-microphone"></i></div>
             <h3>Voice Search Optimization</h3>
             <p>Conversational-query content shaped for single-answer voice responses.</p>
             <span class="service-tile-arrow">Explore service <i class="fa-solid fa-arrow-right"></i></span>
           </a>
-          <a class="service-tile" href="/services/conversational-search-optimization/">
+          <a class="service-tile" href="./services/conversational-search-optimization/index.html">
             <div class="service-tile-num">06</div>
             <div class="service-tile-icon"><i class="fa-solid fa-comments"></i></div>
             <h3>Conversational Search</h3>
             <p>Natural-language UX and content patterns for chat-driven discovery.</p>
             <span class="service-tile-arrow">Explore service <i class="fa-solid fa-arrow-right"></i></span>
           </a>
-          <a class="service-tile" href="/services/faq-content-optimization/">
+          <a class="service-tile" href="./services/faq-content-optimization/index.html">
             <div class="service-tile-num">07</div>
             <div class="service-tile-icon"><i class="fa-solid fa-list-check"></i></div>
             <h3>FAQ Content Optimization</h3>
             <p>Answer-rich FAQ sections with proper structure, schema and intent coverage.</p>
             <span class="service-tile-arrow">Explore service <i class="fa-solid fa-arrow-right"></i></span>
           </a>
-          <a class="service-tile" href="/services/schema-markup/">
+          <a class="service-tile" href="./services/schema-markup/index.html">
             <div class="service-tile-num">08</div>
             <div class="service-tile-icon"><i class="fa-solid fa-code"></i></div>
             <h3>Schema Markup</h3>
             <p>Comprehensive JSON-LD implementation across your most important pages.</p>
             <span class="service-tile-arrow">Explore service <i class="fa-solid fa-arrow-right"></i></span>
           </a>
-          <a class="service-tile" href="/services/entity-optimization/">
+          <a class="service-tile" href="./services/entity-optimization/index.html">
             <div class="service-tile-num">09</div>
             <div class="service-tile-icon"><i class="fa-solid fa-diagram-project"></i></div>
             <h3>Entity Optimization</h3>
@@ -505,7 +327,7 @@
           </a>
         </div>
         <div class="text-center mt-6" data-reveal>
-          <a class="btn btn-secondary" href="/services/">View all 15 services <i class="fa-solid fa-arrow-right"></i></a>
+          <a class="btn btn-secondary" href="./services/index.html">View all 15 services <i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
     </section>
@@ -525,11 +347,11 @@
               <li><i class="fa-solid fa-shield-halved"></i> <span><strong>SSRF-safe by design</strong> — strict URL validation, private IP blocking, time and size limits.</span></li>
             </ul>
             <div style="margin-top: 28px;">
-              <a class="btn btn-primary btn-lg" href="/tools/aeo-checker/" data-ga="aeo_tool_start" data-ga-tool="aeo_checker" data-ga-source="home_preview"><i class="fa-solid fa-magnifying-glass-chart"></i> Run the free AEO Checker</a>
+              <a class="btn btn-primary btn-lg" href="./tools/aeo-checker/index.html" data-ga="aeo_tool_start" data-ga-tool="aeo_checker" data-ga-source="home_preview"><i class="fa-solid fa-magnifying-glass-chart"></i> Run the free AEO Checker</a>
             </div>
           </div>
           <div>
-            <a href="/tools/aeo-checker/" style="display: block; text-decoration: none;">
+            <a href="./tools/aeo-checker/index.html" style="display: block; text-decoration: none;">
               <div class="dashboard" style="cursor: pointer;">
                 <div class="dashboard-header">
                   <div class="dashboard-title"><span class="dot"></span> Free AEO Checker</div>
@@ -665,28 +487,28 @@
 
         <div class="ind-tier-label" data-reveal><i class="fa-solid fa-briefcase"></i> B2B &amp; digital verticals</div>
         <div class="ind-grid-b2b" data-reveal>
-          <a class="ind-card" href="/industries/saas/"><div class="ind-icon"><i class="fa-solid fa-cloud"></i></div><h3>SaaS</h3><p>Product-led discovery, feature comparison queries and integration answer coverage.</p><span class="ind-arrow">Explore <i class="fa-solid fa-arrow-right"></i></span></a>
-          <a class="ind-card" href="/industries/ecommerce/"><div class="ind-icon"><i class="fa-solid fa-cart-shopping"></i></div><h3>eCommerce</h3><p>Product and category answer patterns, schema-rich product data, local inventory.</p><span class="ind-arrow">Explore <i class="fa-solid fa-arrow-right"></i></span></a>
-          <a class="ind-card" href="/industries/healthcare/"><div class="ind-icon"><i class="fa-solid fa-heart-pulse"></i></div><h3>Healthcare</h3><p>YMYL authority, clinical source citations, author credentialing and trust signals.</p><span class="ind-arrow">Explore <i class="fa-solid fa-arrow-right"></i></span></a>
-          <a class="ind-card" href="/industries/real-estate/"><div class="ind-icon"><i class="fa-solid fa-house"></i></div><h3>Real Estate</h3><p>Local answer coverage, neighborhood question patterns, listing schema and intent.</p><span class="ind-arrow">Explore <i class="fa-solid fa-arrow-right"></i></span></a>
-          <a class="ind-card" href="/industries/education/"><div class="ind-icon"><i class="fa-solid fa-graduation-cap"></i></div><h3>Education</h3><p>Course and program discovery, decision-stage question coverage, credentialing.</p><span class="ind-arrow">Explore <i class="fa-solid fa-arrow-right"></i></span></a>
-          <a class="ind-card" href="/industries/b2b/"><div class="ind-icon"><i class="fa-solid fa-briefcase"></i></div><h3>B2B</h3><p>Decision-stage content patterns, comparison queries, RFP-stage question coverage.</p><span class="ind-arrow">Explore <i class="fa-solid fa-arrow-right"></i></span></a>
-          <a class="ind-card" href="/industries/professional-services/"><div class="ind-icon"><i class="fa-solid fa-user-tie"></i></div><h3>Professional Services</h3><p>Service-line discovery, jurisdictional intent, partner visibility and local credibility.</p><span class="ind-arrow">Explore <i class="fa-solid fa-arrow-right"></i></span></a>
+          <a class="ind-card" href="./industries/saas/index.html"><div class="ind-icon"><i class="fa-solid fa-cloud"></i></div><h3>SaaS</h3><p>Product-led discovery, feature comparison queries and integration answer coverage.</p><span class="ind-arrow">Explore <i class="fa-solid fa-arrow-right"></i></span></a>
+          <a class="ind-card" href="./industries/ecommerce/index.html"><div class="ind-icon"><i class="fa-solid fa-cart-shopping"></i></div><h3>eCommerce</h3><p>Product and category answer patterns, schema-rich product data, local inventory.</p><span class="ind-arrow">Explore <i class="fa-solid fa-arrow-right"></i></span></a>
+          <a class="ind-card" href="./industries/healthcare/index.html"><div class="ind-icon"><i class="fa-solid fa-heart-pulse"></i></div><h3>Healthcare</h3><p>YMYL authority, clinical source citations, author credentialing and trust signals.</p><span class="ind-arrow">Explore <i class="fa-solid fa-arrow-right"></i></span></a>
+          <a class="ind-card" href="./industries/real-estate/index.html"><div class="ind-icon"><i class="fa-solid fa-house"></i></div><h3>Real Estate</h3><p>Local answer coverage, neighborhood question patterns, listing schema and intent.</p><span class="ind-arrow">Explore <i class="fa-solid fa-arrow-right"></i></span></a>
+          <a class="ind-card" href="./industries/education/index.html"><div class="ind-icon"><i class="fa-solid fa-graduation-cap"></i></div><h3>Education</h3><p>Course and program discovery, decision-stage question coverage, credentialing.</p><span class="ind-arrow">Explore <i class="fa-solid fa-arrow-right"></i></span></a>
+          <a class="ind-card" href="./industries/b2b/index.html"><div class="ind-icon"><i class="fa-solid fa-briefcase"></i></div><h3>B2B</h3><p>Decision-stage content patterns, comparison queries, RFP-stage question coverage.</p><span class="ind-arrow">Explore <i class="fa-solid fa-arrow-right"></i></span></a>
+          <a class="ind-card" href="./industries/professional-services/index.html"><div class="ind-icon"><i class="fa-solid fa-user-tie"></i></div><h3>Professional Services</h3><p>Service-line discovery, jurisdictional intent, partner visibility and local credibility.</p><span class="ind-arrow">Explore <i class="fa-solid fa-arrow-right"></i></span></a>
         </div>
 
         <div class="ind-tier-label" style="margin-top: 48px;" data-reveal><i class="fa-solid fa-location-dot"></i> US local services</div>
         <div class="ind-grid-local" data-reveal>
-          <a class="ind-local" href="/industries/plumbing/"><i class="fa-solid fa-faucet-drip"></i><span>Plumbing</span></a>
-          <a class="ind-local" href="/industries/auto-glass/"><i class="fa-solid fa-car"></i><span>Auto Glass</span></a>
-          <a class="ind-local" href="/industries/dental-clinics/"><i class="fa-solid fa-tooth"></i><span>Dental</span></a>
-          <a class="ind-local" href="/industries/hvac/"><i class="fa-solid fa-snowflake"></i><span>HVAC</span></a>
-          <a class="ind-local" href="/industries/roofing/"><i class="fa-solid fa-house-chimney"></i><span>Roofing</span></a>
-          <a class="ind-local" href="/industries/personal-injury-law/"><i class="fa-solid fa-scale-balanced"></i><span>Personal Injury Law</span></a>
-          <a class="ind-local" href="/industries/medical-spas/"><i class="fa-solid fa-spa"></i><span>Medical Spas</span></a>
-          <a class="ind-local" href="/industries/pest-control/"><i class="fa-solid fa-bug"></i><span>Pest Control</span></a>
-          <a class="ind-local" href="/industries/home-remodeling/"><i class="fa-solid fa-hammer"></i><span>Home Remodeling</span></a>
-          <a class="ind-local" href="/industries/veterinary-clinics/"><i class="fa-solid fa-paw"></i><span>Veterinary</span></a>
-          <a class="ind-local" href="/industries/landscaping/"><i class="fa-solid fa-leaf"></i><span>Landscaping</span></a>
+          <a class="ind-local" href="./industries/plumbing/index.html"><i class="fa-solid fa-faucet-drip"></i><span>Plumbing</span></a>
+          <a class="ind-local" href="./industries/auto-glass/index.html"><i class="fa-solid fa-car"></i><span>Auto Glass</span></a>
+          <a class="ind-local" href="./industries/dental-clinics/index.html"><i class="fa-solid fa-tooth"></i><span>Dental</span></a>
+          <a class="ind-local" href="./industries/hvac/index.html"><i class="fa-solid fa-snowflake"></i><span>HVAC</span></a>
+          <a class="ind-local" href="./industries/roofing/index.html"><i class="fa-solid fa-house-chimney"></i><span>Roofing</span></a>
+          <a class="ind-local" href="./industries/personal-injury-law/index.html"><i class="fa-solid fa-scale-balanced"></i><span>Personal Injury Law</span></a>
+          <a class="ind-local" href="./industries/medical-spas/index.html"><i class="fa-solid fa-spa"></i><span>Medical Spas</span></a>
+          <a class="ind-local" href="./industries/pest-control/index.html"><i class="fa-solid fa-bug"></i><span>Pest Control</span></a>
+          <a class="ind-local" href="./industries/home-remodeling/index.html"><i class="fa-solid fa-hammer"></i><span>Home Remodeling</span></a>
+          <a class="ind-local" href="./industries/veterinary-clinics/index.html"><i class="fa-solid fa-paw"></i><span>Veterinary</span></a>
+          <a class="ind-local" href="./industries/landscaping/index.html"><i class="fa-solid fa-leaf"></i><span>Landscaping</span></a>
         </div>
       </div>
     </section>
@@ -713,7 +535,7 @@
               <li>Monthly progress report</li>
               <li>1 strategy call per month</li>
             </ul>
-            <a class="btn btn-secondary btn-block" href="/pricing/#starter" data-ga="consultation_click" data-ga-source="home_pricing_starter">View Starter <i class="fa-solid fa-arrow-right"></i></a>
+            <a class="btn btn-secondary btn-block" href="./pricing/index.html#starter" data-ga="consultation_click" data-ga-source="home_pricing_starter">View Starter <i class="fa-solid fa-arrow-right"></i></a>
           </div>
           <div class="pricing-preview-card featured">
             <div class="ppc-tag"><i class="fa-solid fa-star"></i> Most Popular</div>
@@ -730,7 +552,7 @@
               <li>2 strategy calls per month</li>
               <li>Named account lead</li>
             </ul>
-            <a class="btn btn-primary btn-block" href="/pricing/#growth" data-ga="consultation_click" data-ga-source="home_pricing_growth">View Growth <i class="fa-solid fa-arrow-right"></i></a>
+            <a class="btn btn-primary btn-block" href="./pricing/index.html#growth" data-ga="consultation_click" data-ga-source="home_pricing_growth">View Growth <i class="fa-solid fa-arrow-right"></i></a>
           </div>
           <div class="pricing-preview-card">
             <div class="ppc-name"><i class="fa-solid fa-crown"></i> Authority</div>
@@ -746,11 +568,11 @@
               <li>Monthly executive reporting</li>
               <li>Priority support</li>
             </ul>
-            <a class="btn btn-secondary btn-block" href="/pricing/#authority" data-ga="consultation_click" data-ga-source="home_pricing_authority">View Authority <i class="fa-solid fa-arrow-right"></i></a>
+            <a class="btn btn-secondary btn-block" href="./pricing/index.html#authority" data-ga="consultation_click" data-ga-source="home_pricing_authority">View Authority <i class="fa-solid fa-arrow-right"></i></a>
           </div>
         </div>
         <div class="text-center mt-6" data-reveal>
-          <a class="btn btn-secondary" href="/pricing/">Compare all packages &amp; deliverables <i class="fa-solid fa-arrow-right"></i></a>
+          <a class="btn btn-secondary" href="./pricing/index.html">Compare all packages &amp; deliverables <i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
     </section>
@@ -764,7 +586,7 @@
           <p>Realistic business situations with proposed strategy and implementation plans — clearly labeled as illustrative, not fabricated client work. Each scenario is paired with a US city and industry.</p>
         </div>
         <div class="cs-grid" data-reveal>
-          <a class="cs-card" href="/case-studies/plumbing-aeo-houston/">
+          <a class="cs-card" href="./case-studies/plumbing-aeo-houston/index.html">
             <div class="cs-banner">
               <span class="cs-tag"><i class="fa-solid fa-flask"></i> Illustrative</span>
               <div class="cs-industry"><i class="fa-solid fa-faucet-drip"></i> Plumbing</div>
@@ -776,7 +598,7 @@
               <span class="cs-arrow">Read scenario <i class="fa-solid fa-arrow-right"></i></span>
             </div>
           </a>
-          <a class="cs-card" href="/case-studies/dental-aeo-dallas/">
+          <a class="cs-card" href="./case-studies/dental-aeo-dallas/index.html">
             <div class="cs-banner">
               <span class="cs-tag"><i class="fa-solid fa-flask"></i> Illustrative</span>
               <div class="cs-industry"><i class="fa-solid fa-tooth"></i> Dental</div>
@@ -788,7 +610,7 @@
               <span class="cs-arrow">Read scenario <i class="fa-solid fa-arrow-right"></i></span>
             </div>
           </a>
-          <a class="cs-card" href="/case-studies/hvac-aeo-las-vegas/">
+          <a class="cs-card" href="./case-studies/hvac-aeo-las-vegas/index.html">
             <div class="cs-banner">
               <span class="cs-tag"><i class="fa-solid fa-flask"></i> Illustrative</span>
               <div class="cs-industry"><i class="fa-solid fa-snowflake"></i> HVAC</div>
@@ -800,7 +622,7 @@
               <span class="cs-arrow">Read scenario <i class="fa-solid fa-arrow-right"></i></span>
             </div>
           </a>
-          <a class="cs-card" href="/case-studies/roofing-aeo-tampa/">
+          <a class="cs-card" href="./case-studies/roofing-aeo-tampa/index.html">
             <div class="cs-banner">
               <span class="cs-tag"><i class="fa-solid fa-flask"></i> Illustrative</span>
               <div class="cs-industry"><i class="fa-solid fa-house-chimney"></i> Roofing</div>
@@ -812,7 +634,7 @@
               <span class="cs-arrow">Read scenario <i class="fa-solid fa-arrow-right"></i></span>
             </div>
           </a>
-          <a class="cs-card" href="/case-studies/personal-injury-aeo-los-angeles/">
+          <a class="cs-card" href="./case-studies/personal-injury-aeo-los-angeles/index.html">
             <div class="cs-banner">
               <span class="cs-tag"><i class="fa-solid fa-flask"></i> Illustrative</span>
               <div class="cs-industry"><i class="fa-solid fa-scale-balanced"></i> Personal Injury Law</div>
@@ -824,7 +646,7 @@
               <span class="cs-arrow">Read scenario <i class="fa-solid fa-arrow-right"></i></span>
             </div>
           </a>
-          <a class="cs-card" href="/case-studies/med-spa-aeo-scottsdale/">
+          <a class="cs-card" href="./case-studies/med-spa-aeo-scottsdale/index.html">
             <div class="cs-banner">
               <span class="cs-tag"><i class="fa-solid fa-flask"></i> Illustrative</span>
               <div class="cs-industry"><i class="fa-solid fa-spa"></i> Med-Spa</div>
@@ -836,7 +658,7 @@
               <span class="cs-arrow">Read scenario <i class="fa-solid fa-arrow-right"></i></span>
             </div>
           </a>
-          <a class="cs-card" href="/case-studies/real-estate-aeo-miami/">
+          <a class="cs-card" href="./case-studies/real-estate-aeo-miami/index.html">
             <div class="cs-banner">
               <span class="cs-tag"><i class="fa-solid fa-flask"></i> Illustrative</span>
               <div class="cs-industry"><i class="fa-solid fa-house"></i> Real Estate</div>
@@ -848,7 +670,7 @@
               <span class="cs-arrow">Read scenario <i class="fa-solid fa-arrow-right"></i></span>
             </div>
           </a>
-          <a class="cs-card" href="/case-studies/pest-control-aeo-orlando/">
+          <a class="cs-card" href="./case-studies/pest-control-aeo-orlando/index.html">
             <div class="cs-banner">
               <span class="cs-tag"><i class="fa-solid fa-flask"></i> Illustrative</span>
               <div class="cs-industry"><i class="fa-solid fa-bug"></i> Pest Control</div>
@@ -862,7 +684,7 @@
           </a>
         </div>
         <div class="text-center mt-6" data-reveal>
-          <a class="btn btn-secondary" href="/case-studies/">View all 12 scenarios <i class="fa-solid fa-arrow-right"></i></a>
+          <a class="btn btn-secondary" href="./case-studies/index.html">View all 12 scenarios <i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
     </section>
@@ -925,14 +747,14 @@
           <p>Each market has its own answer-engine share, language patterns and intent clusters. Dedicated landing pages outline our localized approach.</p>
         </div>
         <div class="country-grid" data-reveal>
-          <a class="country-card" href="/aeo-services/usa/"><div class="country-flag">🇺🇸</div><div class="country-info"><h3>United States</h3><p>English-language AEO for the most competitive answer-engine market.</p></div><i class="fa-solid fa-arrow-right country-arrow"></i></a>
-          <a class="country-card" href="/aeo-services/uk/"><div class="country-flag">🇬🇧</div><div class="country-info"><h3>United Kingdom</h3><p>British English answer patterns, regional intent and local entity signals.</p></div><i class="fa-solid fa-arrow-right country-arrow"></i></a>
-          <a class="country-card" href="/aeo-services/uae/"><div class="country-flag">🇦🇪</div><div class="country-info"><h3>United Arab Emirates</h3><p>English + Arabic answer optimization for a multilingual digital economy.</p></div><i class="fa-solid fa-arrow-right country-arrow"></i></a>
-          <a class="country-card" href="/aeo-services/canada/"><div class="country-flag">🇨🇦</div><div class="country-info"><h3>Canada</h3><p>English and French content coverage with bilingual answer structures.</p></div><i class="fa-solid fa-arrow-right country-arrow"></i></a>
-          <a class="country-card" href="/aeo-services/australia/"><div class="country-flag">🇦🇺</div><div class="country-info"><h3>Australia</h3><p>Local answer coverage, voice-query patterns and regional entity authority.</p></div><i class="fa-solid fa-arrow-right country-arrow"></i></a>
-          <a class="country-card" href="/aeo-services/india/"><div class="country-flag">🇮🇳</div><div class="country-info"><h3>India</h3><p>English + Indic-language answer optimization for a mobile-first market.</p></div><i class="fa-solid fa-arrow-right country-arrow"></i></a>
-          <a class="country-card" href="/aeo-services/singapore/"><div class="country-flag">🇸🇬</div><div class="country-info"><h3>Singapore</h3><p>English-language AEO for a regional hub with high AI-search adoption.</p></div><i class="fa-solid fa-arrow-right country-arrow"></i></a>
-          <a class="country-card" href="/aeo-services/germany/"><div class="country-flag">🇩🇪</div><div class="country-info"><h3>Germany</h3><p>German-language answer patterns, DACH market credibility and EU compliance.</p></div><i class="fa-solid fa-arrow-right country-arrow"></i></a>
+          <a class="country-card" href="./aeo-services/usa/index.html"><div class="country-flag">🇺🇸</div><div class="country-info"><h3>United States</h3><p>English-language AEO for the most competitive answer-engine market.</p></div><i class="fa-solid fa-arrow-right country-arrow"></i></a>
+          <a class="country-card" href="./aeo-services/uk/index.html"><div class="country-flag">🇬🇧</div><div class="country-info"><h3>United Kingdom</h3><p>British English answer patterns, regional intent and local entity signals.</p></div><i class="fa-solid fa-arrow-right country-arrow"></i></a>
+          <a class="country-card" href="./aeo-services/uae/index.html"><div class="country-flag">🇦🇪</div><div class="country-info"><h3>United Arab Emirates</h3><p>English + Arabic answer optimization for a multilingual digital economy.</p></div><i class="fa-solid fa-arrow-right country-arrow"></i></a>
+          <a class="country-card" href="./aeo-services/canada/index.html"><div class="country-flag">🇨🇦</div><div class="country-info"><h3>Canada</h3><p>English and French content coverage with bilingual answer structures.</p></div><i class="fa-solid fa-arrow-right country-arrow"></i></a>
+          <a class="country-card" href="./aeo-services/australia/index.html"><div class="country-flag">🇦🇺</div><div class="country-info"><h3>Australia</h3><p>Local answer coverage, voice-query patterns and regional entity authority.</p></div><i class="fa-solid fa-arrow-right country-arrow"></i></a>
+          <a class="country-card" href="./aeo-services/india/index.html"><div class="country-flag">🇮🇳</div><div class="country-info"><h3>India</h3><p>English + Indic-language answer optimization for a mobile-first market.</p></div><i class="fa-solid fa-arrow-right country-arrow"></i></a>
+          <a class="country-card" href="./aeo-services/singapore/index.html"><div class="country-flag">🇸🇬</div><div class="country-info"><h3>Singapore</h3><p>English-language AEO for a regional hub with high AI-search adoption.</p></div><i class="fa-solid fa-arrow-right country-arrow"></i></a>
+          <a class="country-card" href="./aeo-services/germany/index.html"><div class="country-flag">🇩🇪</div><div class="country-info"><h3>Germany</h3><p>German-language answer patterns, DACH market credibility and EU compliance.</p></div><i class="fa-solid fa-arrow-right country-arrow"></i></a>
         </div>
       </div>
     </section>
@@ -966,7 +788,7 @@
           </div>
         </div>
         <div class="text-center mt-6" data-reveal>
-          <a class="btn btn-secondary" href="/case-studies/">Read our methodology &amp; authorized case studies <i class="fa-solid fa-arrow-right"></i></a>
+          <a class="btn btn-secondary" href="./case-studies/index.html">Read our methodology &amp; authorized case studies <i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
     </section>
@@ -1076,7 +898,7 @@
           </div>
           <div>
             <div class="card" style="padding: 32px;">
-              <form id="auditForm" action="/api/contact.php" method="post" data-ajax-form data-redirect="/thank-you/">
+              <form id="auditForm" action="./api/contact.php" method="post" data-ajax-form data-redirect="./thank-you/index.html" onsubmit="return false;">
                 <div class="form-grid">
                   <div class="form-field">
                     <label for="f-name">Full name <span class="req">*</span></label>
@@ -1129,7 +951,7 @@
 
                 <div class="form-field form-consent" style="margin-top: 12px;">
                   <input id="f-consent" name="privacy_consent" type="checkbox" required />
-                  <label for="f-consent">I consent to ExpertinAEO processing the data above to respond to this enquiry, in line with the <a href="/privacy-policy/">privacy policy</a>. <span class="req">*</span></label>
+                  <label for="f-consent">I consent to ExpertinAEO processing the data above to respond to this enquiry, in line with the <a href="./privacy-policy/index.html">privacy policy</a>. <span class="req">*</span></label>
                   <span class="error">Please accept the privacy consent to continue.</span>
                 </div>
 
@@ -1160,149 +982,11 @@
     </section>
   </main>
 
-  <!-- ============================================================
-       FOOTER — 4-tier premium layout
-       ============================================================ -->
-  <footer class="site-footer" role="contentinfo">
-    <div class="footer-shell">
+  <!-- The layout.js script will automatically inject Footer right after </main> -->
 
-      <div class="footer-hero">
-        <div class="footer-hero-copy">
-          <a class="logo" href="/">
-            <span class="logo-word"><span class="logo-expertin">Expertin</span><span class="logo-aeo">AEO</span></span>
-            <span class="logo-parent">A product of Tapadia Tech (est. 2001)</span>
-          </a>
-          <p>Answer Engine Optimization specialists helping brands become the cited source across AI search, voice assistants, generative answers and modern search experiences.</p>
-        </div>
-        <div class="footer-hero-cta">
-          <h4><i class="fa-solid fa-envelope-open-text"></i> Get AEO insights in your inbox</h4>
-          <p>One email per month. No spam. Unsubscribe anytime.</p>
-          <form class="footer-newsletter" data-newsletter>
-            <input type="email" name="newsletter_email" placeholder="you@company.com" required />
-            <button class="btn btn-primary btn-sm" type="submit">Subscribe</button>
-          </form>
-        </div>
-      </div>
-
-      <div class="footer-links">
-        <div class="footer-col">
-          <h4>Services</h4>
-          <ul>
-            <li><a href="/services/aeo-consulting/"><i class="fa-solid fa-lightbulb"></i> AEO Consulting</a></li>
-            <li><a href="/services/aeo-audit/"><i class="fa-solid fa-clipboard-check"></i> AEO Audit</a></li>
-            <li><a href="/services/schema-markup/"><i class="fa-solid fa-code"></i> Schema Markup</a></li>
-            <li><a href="/services/featured-snippet-optimization/"><i class="fa-solid fa-bolt"></i> Featured Snippets</a></li>
-            <li><a href="/services/voice-search-optimization/"><i class="fa-solid fa-microphone"></i> Voice Search</a></li>
-            <li><a href="/services/entity-optimization/"><i class="fa-solid fa-diagram-project"></i> Entity Optimization</a></li>
-            <li><a href="/services/ai-answer-visibility/"><i class="fa-solid fa-eye"></i> AI Answer Visibility</a></li>
-            <li><a href="/services/">All 15 services <i class="fa-solid fa-arrow-right"></i></a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Free Tools</h4>
-          <ul>
-            <li><a href="/tools/aeo-checker/"><i class="fa-solid fa-magnifying-glass-chart"></i> AEO Checker</a></li>
-            <li><a href="/tools/schema-checker/"><i class="fa-solid fa-code"></i> Schema Checker</a></li>
-            <li><a href="/tools/answer-checker/"><i class="fa-solid fa-circle-check"></i> Answer Checker</a></li>
-            <li><a href="/tools/faq-generator/"><i class="fa-solid fa-comment-dots"></i> FAQ Generator</a></li>
-            <li><a href="/tools/meta-heading-checker/"><i class="fa-solid fa-heading"></i> Meta &amp; Heading</a></li>
-          </ul>
-          <h4 style="margin-top: 28px;">Pricing</h4>
-          <ul>
-            <li><a href="/pricing/"><i class="fa-solid fa-tag"></i> Compare packages</a></li>
-            <li><a href="/pricing/#starter"><i class="fa-solid fa-seedling"></i> Starter — $1,000/mo</a></li>
-            <li><a href="/pricing/#growth"><i class="fa-solid fa-rocket"></i> Growth — $2,000/mo</a></li>
-            <li><a href="/pricing/#authority"><i class="fa-solid fa-crown"></i> Authority — $4,000/mo</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Company</h4>
-          <ul>
-            <li><a href="/about/"><i class="fa-solid fa-building"></i> About ExpertinAEO</a></li>
-            <li><a href="/case-studies/"><i class="fa-solid fa-chart-line"></i> Case Studies</a></li>
-            <li><a href="/resources/"><i class="fa-solid fa-book-open"></i> Resources</a></li>
-            <li><a href="/contact/"><i class="fa-solid fa-envelope"></i> Contact</a></li>
-            <li><a href="/free-aeo-audit/"><i class="fa-solid fa-bolt"></i> Free AEO Audit</a></li>
-            <li><a href="/sitemap.xml"><i class="fa-solid fa-sitemap"></i> Sitemap</a></li>
-          </ul>
-          <h4 style="margin-top: 28px;">Industries</h4>
-          <ul>
-            <li><a href="/industries/saas/"><i class="fa-solid fa-cloud"></i> SaaS</a></li>
-            <li><a href="/industries/ecommerce/"><i class="fa-solid fa-cart-shopping"></i> eCommerce</a></li>
-            <li><a href="/industries/healthcare/"><i class="fa-solid fa-heart-pulse"></i> Healthcare</a></li>
-            <li><a href="/industries/">All industries <i class="fa-solid fa-arrow-right"></i></a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>AEO by Country</h4>
-          <div class="footer-countries">
-            <a class="footer-country-link" href="/aeo-services/usa/"><span class="flag">🇺🇸</span> United States</a>
-            <a class="footer-country-link" href="/aeo-services/uk/"><span class="flag">🇬🇧</span> United Kingdom</a>
-            <a class="footer-country-link" href="/aeo-services/uae/"><span class="flag">🇦🇪</span> UAE</a>
-            <a class="footer-country-link" href="/aeo-services/canada/"><span class="flag">🇨🇦</span> Canada</a>
-            <a class="footer-country-link" href="/aeo-services/australia/"><span class="flag">🇦🇺</span> Australia</a>
-            <a class="footer-country-link" href="/aeo-services/india/"><span class="flag">🇮🇳</span> India</a>
-            <a class="footer-country-link" href="/aeo-services/singapore/"><span class="flag">🇸🇬</span> Singapore</a>
-            <a class="footer-country-link" href="/aeo-services/germany/"><span class="flag">🇩🇪</span> Germany</a>
-          </div>
-
-          <div class="footer-contact-card" style="margin-top: 20px;">
-            <a class="footer-contact-item" href="mailto:info@tapadiatech.com">
-              <i class="fa-solid fa-envelope"></i>
-              <span><strong>Email</strong>info@tapadiatech.com</span>
-            </a>
-            <a class="footer-contact-item" href="tel:+12132581582">
-              <i class="fa-solid fa-phone"></i>
-              <span><strong>Phone</strong>+1-213-258-1582</span>
-            </a>
-            <a class="footer-contact-item" href="https://wa.me/12132581582" target="_blank" rel="noopener">
-              <i class="fa-brands fa-whatsapp"></i>
-              <span><strong>WhatsApp</strong>Chat with us</span>
-            </a>
-            <div class="footer-socials">
-              <a href="#" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-              <a href="#" aria-label="X (Twitter)" title="X"><i class="fa-brands fa-x-twitter"></i></a>
-              <a href="#" aria-label="YouTube" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
-              <a href="#" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-trust">
-        <div class="footer-trust-badges">
-          <div class="footer-trust-badge">
-            <i class="fa-solid fa-shield-halved"></i>
-            <span><strong>SSRF-safe</strong> free tools</span>
-          </div>
-          <div class="footer-trust-badge">
-            <i class="fa-solid fa-clock-rotate-left"></i>
-            <span><strong>Est. 2001</strong> parent company</span>
-          </div>
-          <div class="footer-trust-badge">
-            <i class="fa-solid fa-circle-check"></i>
-            <span><strong>Evidence-led</strong> reporting</span>
-          </div>
-        </div>
-        <div style="font-size: 0.75rem; color: rgba(255,255,255,0.4);">8 markets · 18 industries · 15 services</div>
-      </div>
-
-      <div class="footer-legal">
-        <div class="copyright">© <span data-year>2026</span> ExpertinAEO, a product of Tapadia Tech. All rights reserved.</div>
-        <div class="legal-links">
-          <a href="/privacy-policy/">Privacy Policy</a>
-          <a href="/terms-and-conditions/">Terms &amp; Conditions</a>
-          <a href="/sitemap.xml">Sitemap</a>
-        </div>
-      </div>
-
-    </div>
-  </footer>
-
+  <!-- Scripts -->
   <script src="./assets/js/config.js"></script>
+  <script src="./assets/js/layout.js"></script>
   <script src="./assets/js/main.js"></script>
 </body>
 </html>
