@@ -117,8 +117,8 @@
                 <span>+1-213-258-1582</span>
               </a>
               <a class="btn btn-primary btn-sm" href="${url('free-aeo-audit/index.html')}" data-ga="audit_request" data-ga-source="header">
-                <i class="fa-solid fa-bolt"></i> <span class="btn-text">Get Free AEO Audit</span>
-                </a>
+  <i class="fa-solid fa-bolt"></i> <span class="btn-text">Get Free AEO Audit</span>
+</a>
               <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
                 <span></span><span></span><span></span>
               </button>
