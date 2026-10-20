@@ -1636,3 +1636,62 @@ p:last-child { margin-bottom: 0; }
 @media (max-width: 600px) {
   .deliverables-grid { grid-template-columns: 1fr; }
 }
+
+/* ==========================================================================
+   MOBILE RESPONSIVENESS FIXES (Append to bottom of styles.css)
+   ========================================================================== */
+
+/* Fix header overflow on mobile */
+@media (max-width: 1180px) {
+    .nav-primary, .header-phone { display: none; }
+    .hamburger { display: flex; }
+
+    /* Allow the header to shrink properly */
+    .header-inner {
+      padding: 0 16px;
+      gap: 8px;
+    }
+  }
+
+  /* Fix specific mobile layout for screens under 640px */
+  @media (max-width: 640px) {
+    .header-shell { padding: 0 12px; }
+    .header-inner { padding: 0 12px; border-radius: var(--radius-md); }
+
+    /* Make logo smaller */
+    .logo { font-size: 1.125rem; }
+    .logo-parent { font-size: 0.5rem; }
+
+    /* Shrink the Header CTA button so it doesn't push off-screen */
+    .header-cta .btn-sm {
+      padding: 8px 12px;
+      font-size: 0.75rem;
+    }
+
+    /* Hero Text sizing */
+    .hero { padding: calc(var(--header-height) + 32px) 0 48px; }
+    .hero-grid { padding: 0 16px; gap: 32px; }
+    .hero h1 { font-size: 2rem; line-height: 1.15; margin-bottom: 16px; }
+    .hero .lead { font-size: 1rem; margin-bottom: 24px; }
+
+    /* Hero Buttons stack */
+    .hero-cta { flex-direction: column; gap: 12px; }
+    .hero-cta .btn { width: 100%; justify-content: center; padding: 14px; font-size: 0.9375rem; }
+
+    /* Hero Stats */
+    .hero-trust { gap: 16px; padding-top: 24px; }
+    .hero-trust-item { flex: 1 1 40%; }
+    .hero-trust-item .num { font-size: 1.5rem; }
+    .hero-trust-item .label { font-size: 0.75rem; }
+  }
+
+  /* Fix very small screens (320px - 380px) */
+  @media (max-width: 380px) {
+    /* Hide the text on the header button, just show the icon to save space */
+    .header-cta .btn-sm span.btn-text { display: none; }
+    .header-cta .btn-sm { padding: 10px; }
+    .hero h1 { font-size: 1.75rem; }
+
+    /* Stack hero stats */
+    .hero-trust-item { flex: 1 1 100%; margin-bottom: 8px; }
+  }

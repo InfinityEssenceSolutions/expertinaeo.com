@@ -5,22 +5,22 @@
    ========================================================================== */
    (function () {
     "use strict";
-  
+
     // Determine the relative path to the root directory
     // If the URL contains /services/, /industries/, etc., we need to go up one level.
     // For deeper pages, we calculate depth.
     const pathSegments = window.location.pathname.split('/').filter(p => p && p !== 'index.html' && p !== 'index.php');
     let rootPath = './';
-    
+
     // If we are in a subfolder (e.g., /services/aeo-consulting/), calculate the relative root
     const depth = pathSegments.length;
     if (depth > 0) {
       rootPath = '../'.repeat(depth);
     }
-    
+
     // Helper to build URLs
     const url = (path) => `${rootPath}${path}`;
-  
+
     // 1. HEADER HTML
     const headerHTML = `
       <a class="skip-link" href="#main">Skip to main content</a>
@@ -31,10 +31,10 @@
               <span class="logo-word"><span class="logo-expertin">Expertin</span><span class="logo-aeo">AEO</span></span>
               <span class="logo-parent">A product of Tapadia Tech</span>
             </a>
-  
+
             <nav class="nav-primary" aria-label="Primary">
               <div class="nav-item"><a class="nav-link" href="${url('index.html')}">Home</a></div>
-  
+
               <div class="nav-item has-mega">
                 <a class="nav-link" href="${url('services/index.html')}" aria-haspopup="true">Services <i class="fa-solid fa-chevron-down chev"></i></a>
                 <div class="mega" role="menu">
@@ -55,7 +55,7 @@
                   </div>
                 </div>
               </div>
-  
+
               <div class="nav-item has-mega">
                 <a class="nav-link" href="${url('industries/index.html')}" aria-haspopup="true">Industries <i class="fa-solid fa-chevron-down chev"></i></a>
                 <div class="mega" role="menu">
@@ -76,9 +76,9 @@
                   </div>
                 </div>
               </div>
-  
+
               <div class="nav-item"><a class="nav-link" href="${url('pricing/index.html')}">Pricing</a></div>
-  
+
               <div class="nav-item has-mega">
                 <a class="nav-link" href="${url('tools/index.html')}" aria-haspopup="true">Free Tools <i class="fa-solid fa-chevron-down chev"></i></a>
                 <div class="mega" style="width: min(560px, calc(100vw - 48px));" role="menu">
@@ -95,9 +95,9 @@
                   </div>
                 </div>
               </div>
-  
+
               <div class="nav-item"><a class="nav-link" href="${url('aeo-services/index.html')}">Markets</a></div>
-  
+
               <div class="nav-item has-mega">
                 <a class="nav-link" href="${url('about/index.html')}" aria-haspopup="true">Company <i class="fa-solid fa-chevron-down chev"></i></a>
                 <div class="mega" style="width: min(440px, calc(100vw - 48px));" role="menu">
@@ -110,15 +110,15 @@
                 </div>
               </div>
             </nav>
-  
+
             <div class="header-cta">
               <a class="header-phone" href="tel:+12132581582" aria-label="Call us at +1 213 258 1582">
                 <i class="fa-solid fa-phone"></i>
                 <span>+1-213-258-1582</span>
               </a>
               <a class="btn btn-primary btn-sm" href="${url('free-aeo-audit/index.html')}" data-ga="audit_request" data-ga-source="header">
-                <i class="fa-solid fa-bolt"></i> Get Free AEO Audit
-              </a>
+                <i class="fa-solid fa-bolt"></i> <span class="btn-text">Get Free AEO Audit</span>
+                </a>
               <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
                 <span></span><span></span><span></span>
               </button>
@@ -126,12 +126,12 @@
           </div>
         </div>
       </header>
-  
+
       <div class="mobile-menu-backdrop" id="mobileMenuBackdrop"></div>
       <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
         <nav class="mobile-nav" aria-label="Mobile">
           <div class="mobile-nav-item"><a class="mobile-nav-link" href="${url('index.html')}"><i class="fa-solid fa-house"></i> Home</a></div>
-  
+
           <div class="mobile-nav-item">
             <button class="mobile-nav-link" data-acc-toggle="acc-services" aria-expanded="false">
               <span><i class="fa-solid fa-layer-group"></i> Services</span> <span class="acc-icon"><i class="fa-solid fa-plus"></i></span>
@@ -147,7 +147,7 @@
               <a href="${url('services/index.html')}">View all services →</a>
             </div></div>
           </div>
-  
+
           <div class="mobile-nav-item">
             <button class="mobile-nav-link" data-acc-toggle="acc-industries" aria-expanded="false">
               <span><i class="fa-solid fa-industry"></i> Industries</span> <span class="acc-icon"><i class="fa-solid fa-plus"></i></span>
@@ -161,9 +161,9 @@
               <a href="${url('industries/index.html')}">View all industries →</a>
             </div></div>
           </div>
-  
+
           <div class="mobile-nav-item"><a class="mobile-nav-link" href="${url('pricing/index.html')}"><i class="fa-solid fa-tag"></i> Pricing</a></div>
-  
+
           <div class="mobile-nav-item">
             <button class="mobile-nav-link" data-acc-toggle="acc-tools" aria-expanded="false">
               <span><i class="fa-solid fa-toolbox"></i> Free Tools</span> <span class="acc-icon"><i class="fa-solid fa-plus"></i></span>
@@ -176,23 +176,23 @@
               <a href="${url('tools/meta-heading-checker/index.html')}">Meta &amp; Heading Checker</a>
             </div></div>
           </div>
-  
+
           <div class="mobile-nav-item"><a class="mobile-nav-link" href="${url('aeo-services/index.html')}"><i class="fa-solid fa-globe"></i> International Markets</a></div>
           <div class="mobile-nav-item"><a class="mobile-nav-link" href="${url('case-studies/index.html')}"><i class="fa-solid fa-chart-line"></i> Case Studies</a></div>
           <div class="mobile-nav-item"><a class="mobile-nav-link" href="${url('resources/index.html')}"><i class="fa-solid fa-book-open"></i> Resources</a></div>
           <div class="mobile-nav-item"><a class="mobile-nav-link" href="${url('about/index.html')}"><i class="fa-solid fa-building"></i> About</a></div>
           <div class="mobile-nav-item"><a class="mobile-nav-link" href="${url('contact/index.html')}"><i class="fa-solid fa-envelope"></i> Contact</a></div>
         </nav>
-  
+
         <a class="btn btn-primary btn-block" href="${url('free-aeo-audit/index.html')}"><i class="fa-solid fa-bolt"></i> Get Free AEO Audit</a>
-  
+
         <div class="mobile-menu-meta">
           <a href="tel:+12132581582"><i class="fa-solid fa-phone"></i> +1-213-258-1582</a>
           <a href="mailto:info@tapadiatech.com"><i class="fa-solid fa-envelope"></i> info@tapadiatech.com</a>
         </div>
       </div>
     `;
-  
+
     // 2. FOOTER HTML
     const footerHTML = `
       <footer class="site-footer" role="contentinfo">
@@ -214,7 +214,7 @@
               </form>
             </div>
           </div>
-  
+
           <div class="footer-links">
             <div class="footer-col">
               <h4>Services</h4>
@@ -229,7 +229,7 @@
                 <li><a href="${url('services/index.html')}">All 15 services <i class="fa-solid fa-arrow-right"></i></a></li>
               </ul>
             </div>
-  
+
             <div class="footer-col">
               <h4>Free Tools</h4>
               <ul>
@@ -247,7 +247,7 @@
                 <li><a href="${url('pricing/index.html')}#authority"><i class="fa-solid fa-crown"></i> Authority — $4,000/mo</a></li>
               </ul>
             </div>
-  
+
             <div class="footer-col">
               <h4>Company</h4>
               <ul>
@@ -266,7 +266,7 @@
                 <li><a href="${url('industries/index.html')}">All industries <i class="fa-solid fa-arrow-right"></i></a></li>
               </ul>
             </div>
-  
+
             <div class="footer-col">
               <h4>AEO by Country</h4>
               <div class="footer-countries">
@@ -279,7 +279,7 @@
                 <a class="footer-country-link" href="${url('aeo-services/singapore/index.html')}"><span class="flag">🇸🇬</span> Singapore</a>
                 <a class="footer-country-link" href="${url('aeo-services/germany/index.html')}"><span class="flag">🇩🇪</span> Germany</a>
               </div>
-  
+
               <div class="footer-contact-card" style="margin-top: 20px;">
                 <a class="footer-contact-item" href="mailto:info@tapadiatech.com">
                   <i class="fa-solid fa-envelope"></i>
@@ -302,7 +302,7 @@
               </div>
             </div>
           </div>
-  
+
           <div class="footer-trust">
             <div class="footer-trust-badges">
               <div class="footer-trust-badge">
@@ -320,7 +320,7 @@
             </div>
             <div style="font-size: 0.75rem; color: rgba(255,255,255,0.4);">8 markets · 18 industries · 15 services</div>
           </div>
-  
+
           <div class="footer-legal">
             <div class="copyright">© <span data-year>2026</span> ExpertinAEO, a product of Tapadia Tech. All rights reserved.</div>
             <div class="legal-links">
@@ -332,11 +332,11 @@
         </div>
       </footer>
     `;
-  
+
     // Inject into DOM
     function injectLayout() {
       const body = document.body;
-      
+
       // Inject Header before main (or as first child)
       const main = document.getElementById('main') || document.querySelector('main');
       if (main) {
@@ -344,14 +344,14 @@
       } else {
         body.insertAdjacentHTML('afterbegin', headerHTML);
       }
-  
+
       // Inject Footer at the end
       body.insertAdjacentHTML('beforeend', footerHTML);
-      
+
       // Dispatch event so main.js knows the DOM is updated
       document.dispatchEvent(new Event('layoutInjected'));
     }
-  
+
     // Run on DOMContentLoaded
     if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', injectLayout);
